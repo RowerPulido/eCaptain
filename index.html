@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>eCaptain</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/functions.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/semantic/semantic.min.css">
-    <script src="css/semantic/semantic.min.js"></script>
-</head>
-<body onload="init()">
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>eCaptain</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="css/semantic/semantic.min.js"></script>
+        <script src="Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
+        <script src="js/creates.js"></script>
+        <script src="js/functions.js"></script>
+        <link rel="shortcut icon" href="svg/rudder.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/semantic/semantic.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body onload="init()">
+        <!-- MENU DESIGN -->
+        <div class="ui fixed menu">
+            <div class="ui container">
+                <a href="#" class="header item">
+                    <img class="logo" src="svg/rudder.svg">
+                    eCaptain
+                </a>
+                <a href="#" class="item">Home</a>
+                <div class="ui simple dropdown item">
+                    Menu <i class="dropdown icon"></i>
+                    <div class="menu">
+                    <!-- <a class="item" href="#">Isla 1</a> -->
+                    <!-- <div class="divider"></div> -->
+                    <div class="header">Islas</div>
+                    <div class="item">
+                        <i class="dropdown icon"></i>
+                        Isla 1
+                        <div class="menu">
+                            <a class="item" href="#">Status</a>
+                            <a class="item" href="#">Graphics</a>
+                        </div>
+                    </div>
+                    <!-- <a class="item" href="#">Link Item</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BODY -->
+        <div id="body">
+            
+        </div>
+    </body>
 </html>
