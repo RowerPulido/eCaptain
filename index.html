@@ -17,6 +17,7 @@
         <script src="canvasjs-2.0/jquery.canvasjs.min.js"></script>
         <script src="js/creates.js"></script>
         <script src="js/functions.js"></script>
+        <script src="js/SVG.js"></script>
         <link rel="shortcut icon" href="svg/rudder.svg" type="image/x-icon">
         <link rel="stylesheet" href="css/semantic/semantic.min.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -55,11 +56,27 @@
                 Contenedor #1
             </div>
             <div id="container">
-               <div style="width:40vw; float:left; background: #FAF; height: 100%;">
+               <div style="width:16vw; float:left; height: 40vh;" id="actualStats">
                    
                </div>
-               <div style="width:40vw; float:right; background: #aff;  height: 100%;">
-
+               <div style="width:16vw; float:right; height: 40vh;">
+                    <table id="tblStats">
+                        <tr>
+                            <td colspan="2" id="tdTittle"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdLabel">Peso Actual:</td>
+                            <td class="tdResult" id="tdWeight"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdLabel">Porcentaje:</td>
+                            <td class="tdResult" id="tdPercentage"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdLabel">Ultima Actualizacion:</td>
+                            <td class="tdResult" id="tdTime"></td>
+                        </tr>
+                    </table>
                </div>
             </div>
             <div id="graph">

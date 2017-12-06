@@ -42,10 +42,11 @@
             return array('ID_ISLA' => $this->get_id_isla(),'FOOD_NAME'=>$this->get_food_name(),
             'FOOD_WEIGHT'=>$this->get_food_weight(),'STATUS'=>$this->get_status(),'DATETIME'=>$this->get_datetime());
         }
+
         public static function get_food_status_by_island($idIsland){
             $results = array();
             $connection = getConnection();
-            $query = 'SELECT idfood_detail,id_isla,food_name,food_weight,status,date_time FROM ecaptain.food_detail WHERE id_isla = ?';
+            $query = 'SELECT idfood_detail,id_isla,food_name,food_weight,status,date_time FROM ecaptain.food_detail WHERE id_isla = ? AND DATE(date_time) = DATE(NOW());';
             $stmt = $connection->prepare($query);
             $stmt->bind_param('i',$idIsland);
             $stmt->execute();
@@ -57,5 +58,21 @@
             return $results;
         }
 
+        public static function getActualStatusByIslandId($idIsland){
+            $fd = array();
+            $connection = getConnection();
+            $query = 'SELECT idfood_detail,id_isla,food_name,food_weight,status,date_time FROM ecaptain.food_detail WHERE id_isla = ? ORDER BY date_time DESC';
+            $stmt = $connection->prepare($query);
+            $stmt->bind_param('i',$idIsland);
+            $stmt->execute();
+            $stmt->bind_result($idFoodDetail,$id_isla,$food_name,$food_weight,$status,$datetime);
+            if($stmt->fetch()){
+                $fd = new FoodDetail($id_isla, $food_name, $food_weight, $status,$datetime);
+            }
+            mysqli_stmt_close($stmt);
+            $connection->close();
+
+            return $fd;
+        }
     }
 ?>

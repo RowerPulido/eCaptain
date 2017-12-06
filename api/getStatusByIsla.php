@@ -1,7 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin:*');
     require_once 'models/food_detail.php'; 
-    //date_default_timezone_set('America/Tijuana');
     $response = array();
     if(isset($_GET['ID_ISLAND'])){
         $result = FoodDetail::get_food_status_by_island($_GET['ID_ISLAND']);
@@ -18,6 +17,5 @@
         $response['STATUS'] = 1;
         $response['MESSAGE'] = 'MISSING PARAMETERS';
     }
-    $response['DATETIME'] = date_create();
     echo json_encode($response);
 ?>
