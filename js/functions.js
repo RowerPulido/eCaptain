@@ -43,20 +43,17 @@ function addData(data) {
     if(data.STATUS == 0 ){
         
         if(data.FOOD_STATUS.length > dataPoints.length) {
-            $.each(data.FOOD_STATUS, function(key, value) {
-                // dataPoints.push({x: value[0], y: parseInt(value[1])});
+            // $.each(data.FOOD_STATUS, function(key, value) {
+            //     // dataPoints.push({x: value[0], y: parseInt(value[1])});
+            //     dataPoints.push({x : new Date(value.DATETIME), y: value.FOOD_WEIGHT });
+            //     xValue++;
+            //     yValue = parseInt(value.FOOD_WEIGHT);
+            // });  
+            for (let i = dataPoints.length; i < data.FOOD_STATUS.length; i++) {
+                const value = data.FOOD_STATUS[i];
                 dataPoints.push({x : new Date(value.DATETIME), y: value.FOOD_WEIGHT });
-                xValue++;
-                yValue = parseInt(value.FOOD_WEIGHT);
-            });
-        } else {
-            //dataPoints.shift();
-            
-            // dataPoints.push({x: new Date(data.FOOD_STATUS[0].DATETIME), y: parseInt(data.FOOD_STATUS[0].FOOD_WEIGHT)});
-            // xValue++;
-            // yValue = parseInt(data.FOOD_STATUS[0].FOOD_WEIGHT);
+            }
         }
-        
         chart.render();
         setTimeout(updateData, 1500);
     }
