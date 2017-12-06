@@ -1,3 +1,5 @@
+const URL_GET_STATUS_CONTAINER = 'http://localhost/eCaptain/api/getStatusByIsla.php';
+
 var dataPoints = [];
 var chart;
 
@@ -61,7 +63,7 @@ function addData(data) {
 }
 
 function updateData() {
-    console.log('Entra');
-	$.getJSON("http://165.227.76.225/eCaptain/api/getStatusByIsla.php?ID_ISLAND=1", addData);
+    //console.log('Entra');
+	$.getJSON(URL_GET_STATUS_CONTAINER+'?ID_ISLAND=1', addData);
     //addData([[0,6],[1,11],[2,8],[3,12],[4,11],[5,14]]);
 }

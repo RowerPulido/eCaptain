@@ -8,7 +8,7 @@
         // $database = $config['database']['database'];
         $host = "localhost";
         $user = "root";
-        $password = "final123";
+        $password = "";
         $database ="ecaptain";
 
         $conn = new mysqli($host, $user, $password , $database);
