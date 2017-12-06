@@ -6,9 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>eCaptain</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/3.2.1.jquery.min.js"></script>
+        
         <script src="css/semantic/semantic.min.js"></script>
         <script src="Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
+        
+        <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+        
+        <script src="canvasjs-2.0/canvasjs.min.js"></script>
+        <script src="canvasjs-2.0/jquery.canvasjs.min.js"></script>
         <script src="js/creates.js"></script>
         <script src="js/functions.js"></script>
         <link rel="shortcut icon" href="svg/rudder.svg" type="image/x-icon">
@@ -17,7 +23,7 @@
     </head>
     <body onload="init()">
         <!-- MENU DESIGN -->
-        <div class="ui fixed menu">
+        <div class="ui fixed menu" id="menuBar">
             <div class="ui container">
                 <a href="#" class="header item">
                     <img class="logo" src="svg/rudder.svg">
@@ -45,7 +51,20 @@
         </div>
         <!-- BODY -->
         <div id="body">
-            
+            <div id="tittle">
+                Contenedor #1
+            </div>
+            <div id="container">
+               <div style="width:40vw; float:left; background: #FAF; height: 100%;">
+                   
+               </div>
+               <div style="width:40vw; float:right; background: #aff;  height: 100%;">
+
+               </div>
+            </div>
+            <div id="graph">
+                Grafica
+            </div>
         </div>
     </body>
 </html>

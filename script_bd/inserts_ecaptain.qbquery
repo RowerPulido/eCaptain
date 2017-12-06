@@ -1,8 +1,55 @@
+<<<<<<< HEAD
 ﻿insert into dishes values(null, 'Pollo con Verduras');
 insert into dishes values(null, 'Arroz');
 insert into dishes values(null, 'Camaron Enchilado');
 insert into dishes values(null, 'Pollo Con Pina');
 insert into dishes values(null, 'Salchichas');
+=======
+<<<<<<< HEAD
+﻿insert into Dishes values(null, 'Arroz');
+insert into Dishes values(null, 'Pollo con Verduras');
+insert into Dishes values(null, 'Camaron Enchilado');
+insert into Dishes values(null, 'Pollo Con Pina');
+insert into Dishes values(null, 'Salchichas');
+
+insert into Islands values(null,'isla 1', 8);
+insert into Islands values(null,'isla 2', 6);
+insert into Islands values(null,'isla 3', 10);
+
+
+/*isla numero 1*/
+insert into Containers values(null, 1, 1, 10);
+insert into Containers values(null, 2, 1, 7);
+insert into Containers values(null, 3, 1, 10);
+insert into Containers values(null, 4, 1, 10);
+insert into Containers values(null, 5, 1, 9);
+insert into Containers values(null, 6, 1, 15);
+insert into Containers values(null, 7, 1, 10);
+insert into Containers values(null, 8, 1, 10);
+/*ISLA #2*/
+insert into Containers values(null, 1, 2, 10);
+insert into Containers values(null, 2, 2, 5);
+insert into Containers values(null, 3, 2, 7);
+insert into Containers values(null, 4, 2, 10);
+insert into Containers values(null, 5, 2, 16);
+insert into Containers values(null, 6, 2, 20);
+/*ISLA #3*/
+insert into Containers values(null, 1, 3, 10);
+insert into Containers values(null, 2, 3, 10);
+insert into Containers values(null, 3, 3, 10);
+insert into Containers values(null, 4, 3, 10);
+insert into Containers values(null, 5, 3, 10);
+insert into Containers values(null, 6, 3, 10);
+insert into Containers values(null, 7, 3, 10);
+insert into Containers values(null, 8, 3, 19);
+insert into Containers values(null, 9, 3, 6);
+=======
+﻿insert into Dishes values(null, 'Arroz');
+insert into Dishes values(null, 'Pollo con Verduras');
+insert into Dishes values(null, 'Camaron Enchilado');
+insert into Dishes values(null, 'Pollo Con Pina');
+insert into Dishes values(null, 'Salchichas');
+>>>>>>> origin/master
 
 insert into Islands values(null,'isla 1', 8);
 insert into Islands values(null,'isla 2', 6);
@@ -26,6 +73,7 @@ insert into containers values(null, 4, 2, 10);
 insert into containers values(null, 5, 2, 16);
 insert into containers values(null, 6, 2, 20);
 /*ISLA #3*/
+<<<<<<< HEAD
 insert into containers values(null, 1, 3, 10);
 insert into containers values(null, 2, 3, 10);
 insert into containers values(null, 3, 3, 10);
@@ -36,3 +84,16 @@ insert into containers values(null, 7, 3, 10);
 insert into containers values(null, 8, 3, 19);
 insert into containers values(null, 9, 3, 6);
 insert into containers values(null, 10, 3, 3);
+=======
+insert into Containers values(null, 1, 3, 10);
+insert into Containers values(null, 2, 3, 10);
+insert into Containers values(null, 3, 3, 10);
+insert into Containers values(null, 4, 3, 10);
+insert into Containers values(null, 5, 3, 10);
+insert into Containers values(null, 6, 3, 10);
+insert into Containers values(null, 7, 3, 10);
+insert into Containers values(null, 8, 3, 19);
+insert into Containers values(null, 9, 3, 6);
+>>>>>>> 563e63e60aed1808c29a7926cf78a3e81338c734
+insert into Containers values(null, 10, 3, 3);
+>>>>>>> origin/master

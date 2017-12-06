@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 api/models/Connection.php
+=======
+
+api/models/Connection\.php
+>>>>>>> origin/master
+api/models/Connection_pdo.php
