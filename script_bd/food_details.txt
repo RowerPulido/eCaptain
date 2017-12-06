@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CREATE TABLE `ecaptain`.`food_detail` (
   `idfood_detail` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   `id_isla` INTEGER UNSIGNED NOT NULL,
@@ -7,3 +8,14 @@ CREATE TABLE `ecaptain`.`food_detail` (
   PRIMARY KEY (`idfood_detail`)
 )
 ENGINE = InnoDB;
+=======
+CREATE TABLE `ecaptain`.`food_detail` (
+  `idfood_detail` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_isla` INTEGER UNSIGNED NOT NULL,
+  `food_name` VARCHAR(45) NOT NULL,
+  `food_weight` DOUBLE NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idfood_detail`)
+)
+ENGINE = InnoDB;
+>>>>>>> 563e63e60aed1808c29a7926cf78a3e81338c734
