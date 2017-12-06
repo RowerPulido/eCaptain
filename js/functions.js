@@ -1,4 +1,4 @@
-const URL_GET_STATUS_CONTAINER = 'http://localhost/eCaptain/api/getStatusByIsla.php';
+const URL_GET_STATUS_CONTAINER = 'http://localhost:8080/eCaptain/api/getStatusByIsla.php';
 
 var dataPoints = [];
 var chart;
@@ -41,8 +41,8 @@ var yValue = 10;
 
 function addData(data) {
     if(data.STATUS == 0 ){
+        
         if(data.FOOD_STATUS.length > dataPoints.length) {
-            
             $.each(data.FOOD_STATUS, function(key, value) {
                 // dataPoints.push({x: value[0], y: parseInt(value[1])});
                 dataPoints.push({x : new Date(value.DATETIME), y: value.FOOD_WEIGHT });
